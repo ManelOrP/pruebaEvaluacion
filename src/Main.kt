@@ -1,10 +1,13 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
-    val name = "ejercicio 1"
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    println("Este es el " + name + "!")
+   val cuenta = Cuenta("Juanma")
+    val cuenta2 = Cuenta("Carlos", 1200f)
 
+    cuenta.ingresar(100f)
+    println(cuenta.cantidad)
 
+    println(cuenta2.cantidad)
+    cuenta2.retirar(1300f)
+    println(cuenta2.cantidad)
 }
